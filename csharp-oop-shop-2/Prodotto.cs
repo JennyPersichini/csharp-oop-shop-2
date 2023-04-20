@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_oop_shop_2
 {
-    internal class Prodotto
+    public class Prodotto
     {
         private string nome;
         private string descrizione;
@@ -36,7 +36,7 @@ namespace csharp_oop_shop_2
             return this.prezzo;
         }
 
-        public double getPrezzoConIva()
+        public double prezzoConIva()
         {
             return prezzo + (prezzo / 100 * iva);
         }
@@ -45,14 +45,12 @@ namespace csharp_oop_shop_2
         {
             this.prezzo = prezzo;
         }
-
-        public string GetProdottoStringa()
+        public virtual void StampaProdotto()
         {
-            string rapprStringa = "Nome: " + this.nome + ", ";
-            rapprStringa += "Descrizione: " + this.descrizione + ", ";
-            rapprStringa += "Prezzo: " + this.prezzo + ", ";
-
-            return rapprStringa;
+            Console.WriteLine("Nome: " + this.nome);
+            Console.WriteLine("Descrizione: " + this.descrizione);
+            Console.WriteLine("Prezzo: " + this.prezzo);
+            Console.WriteLine("Prezo con IVA : " + this.prezzoConIva); 
         }
     }
 }
