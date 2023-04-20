@@ -25,17 +25,16 @@ namespace csharp_oop_shop_2
         }
 
         //METHODS
-        public void RiempiSacchetto(double quantitaFrutta)
+        public void MettiNelSacchetto(double quantitaFrutta)
         {
-            if (this.quantitaFrutta <= 5)
+            if (quantitaFrutta > 5)
             {
-                this.quantitaFrutta = quantitaFrutta;
-                Console.WriteLine("Numero frutta al suo interno: " + quantitaFrutta);
+                Console.WriteLine("Hai superato la quantità massima di pezzi di frutta");
             }
             else
             {
-                Console.WriteLine("Hai raggiunto la quantità massima di pezzi di frutta");
-                this.quantitaFrutta = 0;
+                this.quantitaFrutta = quantitaFrutta;
+                Console.WriteLine("Numero frutta al suo interno: " + quantitaFrutta);
             }
         }
 
@@ -43,7 +42,7 @@ namespace csharp_oop_shop_2
         {
             base.StampaProdotto();
             Console.WriteLine("Numero frutta al suo interno: " + quantitaFrutta);
-            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("---------------------------------------------");
         }
     }
 }
