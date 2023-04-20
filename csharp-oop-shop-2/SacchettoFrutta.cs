@@ -42,7 +42,7 @@ namespace csharp_oop_shop_2
         public override void StampaProdotto()
         {
             base.StampaProdotto();
-            Console.Write("Numero frutta al suo interno: " + quantitaFrutta);
+            Console.WriteLine("Numero frutta al suo interno: " + quantitaFrutta);
             Console.WriteLine("-----------------------------------");
         }
     }
