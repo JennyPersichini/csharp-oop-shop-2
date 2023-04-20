@@ -42,7 +42,6 @@ namespace csharp_oop_shop_2
         {
             base.StampaProdotto();
             Console.WriteLine("Numero frutta al suo interno: " + quantitaFrutta);
-            Console.WriteLine("---------------------------------------------");
         }
     }
 }
