@@ -38,8 +38,43 @@ namespace csharp_oop_shop_2
         }
 
         //METODI
-       
+        public void Bevi(double litriDaBere)
+        {
+            if (this.litri - litriDaBere > 0)
+            {
+                this.litri = this.litri - litriDaBere;
+                Console.WriteLine("Hai bevuto " + litriDaBere + " litri");
+            }
+            else
+            {
+                Console.WriteLine("Oh-oh! è finita!");
+                this.litri = 0;
+            }
+        }
 
+        public void Riempi(double litriDaMettere)
+        {
+            if (litriDaMettere > this.litri)
+            {
+                Console.WriteLine("è troppa!!!");
+            }
+            else if (litriDaMettere < this.litri)
+            {
+                Console.WriteLine("Metti, metti!!!");
+            }
+            else
+            {
+                Console.WriteLine("Bottiglia piena!!!!");
+            }
+        }
+
+        public void Svuota()
+        {
+            this.litri = 0;
+            Console.WriteLine("Hai svuotato la bottiglia!");
+        }
+
+        
 
     }
 }
