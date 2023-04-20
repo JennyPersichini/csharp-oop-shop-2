@@ -74,7 +74,13 @@ namespace csharp_oop_shop_2
             Console.WriteLine("Hai svuotato la bottiglia!");
         }
 
-        
-
+        public override void StampaProdotto()
+        {
+            base.StampaProdotto();
+            Console.WriteLine("Litri: " + string.Format("{0:F1}", (this.litri)));
+            Console.WriteLine("Sorgente: " + sorgente);
+            Console.WriteLine("pH: " + ph);
+            Console.WriteLine("-----------------------------------");
+        }
     }
 }

@@ -50,7 +50,7 @@ namespace csharp_oop_shop_2
             Console.WriteLine("Nome: " + this.nome);
             Console.WriteLine("Descrizione: " + this.descrizione);
             Console.WriteLine("Prezzo: " + this.prezzo);
-            Console.WriteLine("Prezo con IVA : " + this.prezzoConIva()); 
+            Console.WriteLine("Prezzo con IVA : " + this.prezzoConIva()); 
         }
     }
 }
