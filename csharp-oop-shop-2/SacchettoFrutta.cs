@@ -24,7 +24,7 @@ namespace csharp_oop_shop_2
             return this.quantitaFrutta;
         }
 
-        //METHODS
+        //METODI
         public void MettiNelSacchetto(double quantitaFrutta)
         {
             if (quantitaFrutta > 5)
